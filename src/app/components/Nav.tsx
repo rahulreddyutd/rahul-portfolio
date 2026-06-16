@@ -22,13 +22,12 @@ export default function Nav() {
       display: "flex", alignItems: "center", justifyContent: "space-between",
       transition: "all 0.3s",
     }}>
-      <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "baseline", gap: "10px" }}>
-        <span style={{ fontFamily: "'Inter',sans-serif", fontSize: "14px", color: "#C9922A", fontWeight: 600, letterSpacing: "0.01em" }}>
-          Rahul Reddy Puchakayala
-        </span>
-        <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: "11px", color: "#4A4742", letterSpacing: "0.04em" }}>
-          AI Product Manager
-        </span>
+      <Link href="/" style={{
+        fontFamily: "'JetBrains Mono',monospace",
+        fontSize: "13px", color: "#C9922A",
+        letterSpacing: "0.06em", textDecoration: "none",
+      }}>
+        RRP
       </Link>
       <div style={{ display: "flex", gap: "28px", alignItems: "center" }}>
         {[
