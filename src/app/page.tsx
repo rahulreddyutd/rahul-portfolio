@@ -79,7 +79,7 @@ const PROJECTS: Project[] = [
     tagline: "Financial & Legal Intelligence Platform",
     url: "https://regulated-ai.vercel.app",
     year: "2026",
-    narrative: "Compliance-by-architecture: FINRA Rule 2111 and Reg BI gates are structural — recommendation delivery is only reachable through compliance, making non-compliant output structurally impossible.",
+    narrative: "Compliance-by-architecture: FINRA Rule 2111 and Reg BI gates are structural recommendation delivery is only reachable through compliance, making non-compliant output structurally impossible.",
     metrics: [
       { value: "5", label: "Agents" },
       { value: "<15s", label: "Analysis" },
@@ -96,7 +96,7 @@ const PROJECTS: Project[] = [
     tagline: "AI Operating System for Product Teams",
     url: "https://product-os.vercel.app",
     year: "2026",
-    narrative: "6-agent pipeline converting customer interviews, support tickets, and NPS data into RICE-scored roadmaps, PRDs, and A/B test designs. Schema designed before agents — output schema first.",
+    narrative: "6-agent pipeline converting customer interviews, support tickets, and NPS data into RICE-scored roadmaps, PRDs, and A/B test designs. Schema designed before agents output schema first.",
     metrics: [
       { value: "6", label: "Agents" },
       { value: "RICE", label: "Scoring" },
@@ -152,7 +152,7 @@ function ProjectCard({ project }: { project: Project }) {
           background: project.accentColor, zIndex: 2,
         }} />
 
-        {/* Screenshot — TODO: replace with locally hosted PNGs for speed/reliability
+        {/* Screenshot TODO: replace with locally hosted PNGs for speed/reliability
             Place files at /public/screenshots/{slug}.png and swap src to `/${project.slug}.png` */}
         {/* Live screenshot via microlink */}
         {!imgError ? (
@@ -181,7 +181,7 @@ function ProjectCard({ project }: { project: Project }) {
           }} />
         )}
 
-        {/* Fallback — stylized mock if screenshot fails */}
+        {/* Fallback stylized mock if screenshot fails */}
         {imgError && (
           <div style={{
             position: "absolute", inset: 0,
@@ -371,7 +371,7 @@ export default function Home() {
           </h1>
 
           <p style={{ fontSize: "17px", color: C.text2, lineHeight: 1.75, maxWidth: "540px", marginBottom: "16px" }}>
-            AI Product Manager with 6+ years shipping LLMs, RAG pipelines, and multi-agent systems in regulated environments. Reduced analyst report time by 50%, scaled compliance monitoring from 1% to 100% of transactions, and eliminated $1M+ in annual software spend — at Capital One supporting 800+ users.
+            AI Product Manager with 6+ years shipping LLMs, RAG pipelines, and multi-agent systems in regulated environments. Reduced analyst report time by 50%, scaled compliance monitoring from 1% to 100% of transactions, and eliminated $1M+ in annual software spend at Capital One supporting 800+ users.
           </p>
 
           <div style={{
@@ -501,9 +501,9 @@ export default function Home() {
           </h2>
           <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:"16px" }}>
             {[
-              { icon:"⚖", title:"Trust", color: C.blue, body:"AI must be governable. Compliance is not a feature added after the agent works — it is an architectural constraint that shapes every design decision from the start." },
-              { icon:"🧭", title:"Decisions", color: C.gold, body:"AI should improve decisions, not just automate tasks. The measure is not speed or throughput — it is whether the human at the end makes a better call than they would have without it." },
-              { icon:"📐", title:"Evaluation", color: C.green, body:"AI products need measurable quality. Hallucination rate, compliance pass rate, retrieval precision — if you cannot measure it, you cannot improve it and you cannot defend it in a board meeting." },
+              { icon:"⚖", title:"Trust", color: C.blue, body:"AI must be governable. Compliance is not a feature added after the agent works it is an architectural constraint that shapes every design decision from the start." },
+              { icon:"🧭", title:"Decisions", color: C.gold, body:"AI should improve decisions, not just automate tasks. The measure is not speed or throughput it is whether the human at the end makes a better call than they would have without it." },
+              { icon:"📐", title:"Evaluation", color: C.green, body:"AI products need measurable quality. Hallucination rate, compliance pass rate, retrieval precision if you cannot measure it, you cannot improve it and you cannot defend it in a board meeting." },
             ].map(({ icon, title, color, body }) => (
               <div key={title} className="sr" style={{
                 background: C.card, border: `1px solid ${C.border}`,
@@ -531,19 +531,19 @@ export default function Home() {
               <div style={{ borderLeft:`2px solid ${C.gold}`, paddingLeft:"20px" }}>
                 <div style={{ fontSize:"13px", fontWeight:600, color:C.text, marginBottom:"8px" }}>Capital One</div>
                 <p style={{ fontSize:"14px", color:C.text2, lineHeight:1.75 }}>
-                  Leading AI platforms at Capital One taught me that enterprise AI fails not because the models are wrong, but because the governance structures were not designed for how AI actually behaves. I shipped a VectorDB platform, an LLM fine-tuning service, and human-in-the-loop compliance workflows — and the hardest problems were never the models. They were the organizational trust, the audit requirements, and the edge cases no one anticipated.
+                  Leading AI platforms at Capital One taught me that enterprise AI fails not because the models are wrong, but because the governance structures were not designed for how AI actually behaves. I shipped a VectorDB platform, an LLM fine-tuning service, and human-in-the-loop compliance workflows and the hardest problems were never the models. They were the organizational trust, the audit requirements, and the edge cases no one anticipated.
                 </p>
               </div>
               <div style={{ borderLeft:`2px solid ${C.gold}`, paddingLeft:"20px" }}>
                 <div style={{ fontSize:"13px", fontWeight:600, color:C.text, marginBottom:"8px" }}>Optum</div>
                 <p style={{ fontSize:"14px", color:C.text2, lineHeight:1.75 }}>
-                  At Optum I rebuilt anomaly detection for a platform serving 5,000 healthcare engineers. The original system had high recall and near-zero adoption — engineers ignored it because they could not tell which alerts mattered. I added severity ranking and confidence scoring. Adoption went from near-zero to 60% in six weeks. That experience is why I believe explainability is not a feature. It is the entire product.
+                  At Optum I rebuilt anomaly detection for a platform serving 5,000 healthcare engineers. The original system had high recall and near-zero adoption engineers ignored it because they could not tell which alerts mattered. I added severity ranking and confidence scoring. Adoption went from near-zero to 60% in six weeks. That experience is why I believe explainability is not a feature. It is the entire product.
                 </p>
               </div>
               <div style={{ borderLeft:`2px solid ${C.gold}`, paddingLeft:"20px" }}>
                 <div style={{ fontSize:"13px", fontWeight:600, color:C.text, marginBottom:"8px" }}>What I am trying to build</div>
                 <p style={{ fontSize:"14px", color:C.text2, lineHeight:1.75 }}>
-                  AI systems that improve decisions, not just generate answers. The three projects in this portfolio are my attempt to demonstrate what that looks like in practice — in regulated financial advice, in executive decision-making, and in product strategy. All three share the same architectural principle: governance enforced by structure, not by process.
+                  AI systems that improve decisions, not just generate answers. The three projects in this portfolio are my attempt to demonstrate what that looks like in practice in regulated financial advice, in executive decision-making, and in product strategy. All three share the same architectural principle: governance enforced by structure, not by process.
                 </p>
               </div>
             </div>
@@ -581,7 +581,7 @@ export default function Home() {
               The pattern behind<br /><em style={{fontStyle:"italic", color:C.gold}}>every project.</em>
             </h2>
             <p style={{ fontSize:"14px", color:C.text2, lineHeight:1.75, marginBottom:"28px" }}>
-              Every product I build follows the same principle: governance is structural, not procedural. The agent pipeline cannot produce an output that bypasses evaluation and governance. That is not a compliance checkbox — it is an architectural invariant.
+              Every product I build follows the same principle: governance is structural, not procedural. The agent pipeline cannot produce an output that bypasses evaluation and governance. That is not a compliance checkbox it is an architectural invariant.
             </p>
             <div style={{ display:"flex", flexWrap:"wrap", gap:"8px" }}>
               {["LangGraph","Claude","GPT-4","RAG","LLM Evaluation","Human-in-the-Loop","RICE","FINRA","Reg BI"].map(t => (
@@ -650,7 +650,7 @@ export default function Home() {
                   <ul style={{ listStyle:"none", display:"flex", flexDirection:"column", gap:"10px" }}>
                     {bullets.map((b, i) => (
                       <li key={i} style={{ fontSize:"14px", color:C.text2, paddingLeft:"18px", position:"relative", lineHeight:1.65 }}>
-                        <span style={{ position:"absolute", left:0, color:C.text3, fontSize:"12px" }}>—</span>
+                        <span style={{ position:"absolute", left:0, color:C.text3, fontSize:"12px" }}> </span>
                         <span dangerouslySetInnerHTML={{ __html: b.replace(/<strong>/g,`<strong style="color:${C.text};font-weight:500">`).replace(/<\/strong>/g,"</strong>") }} />
                       </li>
                     ))}
@@ -670,7 +670,7 @@ export default function Home() {
             Let&apos;s build something<br /><em style={{fontStyle:"italic", color:C.gold}}>that governs itself.</em>
           </h2>
           <p style={{ fontSize:"15px", color:C.text2, lineHeight:1.75, marginBottom:"36px" }}>
-            Open to Senior AI PM roles at companies building AI products in fintech, healthtech, and enterprise SaaS. Currently at Capital One — selectively evaluating the right next step.
+            Open to Senior AI PM roles at companies building AI products in fintech, healthtech, and enterprise SaaS. Currently at Capital One selectively evaluating the right next step.
           </p>
           <div style={{ display:"flex", gap:"12px", flexWrap:"wrap" }}>
             <a href="https://www.linkedin.com/in/rahulreddypuchakayala/" target="_blank" rel="noopener noreferrer" style={{
