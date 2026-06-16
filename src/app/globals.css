@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:#0A0A0B; --surface:#101010; --card:#161614;
+  --border:#242420; --border-hi:#323230;
+  --text:#F2EDE6; --text-2:#9C9790; --text-3:#4A4742;
+  --gold:#C9922A; --gold-dim:#7A5518; --gold-glow:rgba(201,146,42,0.10);
+  --green:#4ABA7A; --red:#E06060; --blue:#5B9BD5; --purple:#9B7FD4;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;font-size:15px;line-height:1.6;}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border-hi);border-radius:3px;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+.display{font-family:'DM Serif Display',Georgia,serif;font-weight:400;}
+.mono{font-family:'JetBrains Mono',monospace;}
