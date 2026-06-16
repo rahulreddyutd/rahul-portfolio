@@ -1,10 +1,5 @@
+"use client";
 import Link from "next/link";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "ProductOS Case Study — Rahul Reddy",
-  description: "AI Operating System for Product Teams. 6-agent pipeline converting customer interviews into RICE-scored roadmaps, PRDs, and experiment designs.",
-};
 
 const C = {
   bg:"#0A0A0B", surface:"#101010", card:"#161614",

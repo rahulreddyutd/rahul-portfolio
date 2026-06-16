@@ -1,10 +1,5 @@
+"use client";
 import Link from "next/link";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "RegulatedAI Case Study — Rahul Reddy",
-  description: "Financial & Legal Intelligence Platform with compliance-by-architecture. FINRA Rule 2111, Reg BI, citation verification, human approval workflow.",
-};
 
 const C = {
   bg:"#0A0A0B", surface:"#101010", card:"#161614",

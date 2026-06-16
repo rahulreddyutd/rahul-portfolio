@@ -1,10 +1,5 @@
+"use client";
 import Link from "next/link";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "ExecutiveAI Case Study — Rahul Reddy",
-  description: "AI Chief of Staff with governance-by-architecture. Decision registry, executive approval queue, week-over-week confidence scoring.",
-};
 
 const C = {
   bg:"#0A0A0B", surface:"#101010", card:"#161614",
