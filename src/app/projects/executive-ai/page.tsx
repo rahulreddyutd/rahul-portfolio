@@ -50,7 +50,7 @@ export default function ExecutiveAICaseStudy() {
             An AI Chief of Staff that converts meeting transcripts and Slack threads into structured decision registries — with accountability structurally enforced rather than process-dependent.
           </p>
           <div style={{ display:"flex", gap:"12px", flexWrap:"wrap" }}>
-            <a href="https://executive-ai.vercel.app" target="_blank" rel="noopener noreferrer" style={{ padding:"10px 20px", background:C.purple, color:C.bg, borderRadius:"6px", fontSize:"13px", fontWeight:600, textDecoration:"none" }}>Live Demo ↗</a>
+            <a href="https://executive-ai-indol.vercel.app" target="_blank" rel="noopener noreferrer" style={{ padding:"10px 20px", background:C.purple, color:C.bg, borderRadius:"6px", fontSize:"13px", fontWeight:600, textDecoration:"none" }}>Live Demo ↗</a>
             <a href="https://github.com/rahulreddyutd/executive-ai" target="_blank" rel="noopener noreferrer" style={{ padding:"10px 20px", background:"transparent", color:C.text2, border:`1px solid ${C.borderHi}`, borderRadius:"6px", fontSize:"13px", textDecoration:"none" }}>GitHub →</a>
           </div>
         </div>

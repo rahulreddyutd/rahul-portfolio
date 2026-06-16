@@ -94,7 +94,7 @@ const PROJECTS: Project[] = [
     slug: "product-os",
     name: "ProductOS",
     tagline: "AI Operating System for Product Teams",
-    url: "https://product-os.vercel.app",
+    url: "https://product-os-one.vercel.app",
     year: "2026",
     narrative: "6-agent pipeline converting customer interviews, support tickets, and NPS data into RICE-scored roadmaps, PRDs, and A/B test designs. Schema designed before agents — output schema first.",
     metrics: [
@@ -111,7 +111,7 @@ const PROJECTS: Project[] = [
     slug: "executive-ai",
     name: "ExecutiveAI",
     tagline: "AI Chief of Staff",
-    url: "https://executive-ai.vercel.app",
+    url: "https://executive-ai-indol.vercel.app",
     year: "2025",
     narrative: "Governance-by-architecture: CRITICAL decisions auto-escalate to an approval queue with impact framing and immutable audit trail. Week-over-week confidence scoring from schedule risk, stakeholder sentiment, and decision velocity.",
     metrics: [

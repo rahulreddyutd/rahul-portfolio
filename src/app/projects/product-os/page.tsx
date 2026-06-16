@@ -41,7 +41,7 @@ export default function ProductOSCaseStudy() {
             Most AI tools automate work. ProductOS automates product thinking — converting raw customer signal into RICE-scored roadmaps, PRDs, and A/B test designs in under 30 seconds.
           </p>
           <div style={{ display:"flex", gap:"12px", flexWrap:"wrap" }}>
-            <a href="https://product-os.vercel.app" target="_blank" rel="noopener noreferrer" style={{ padding:"10px 20px", background:C.gold, color:C.bg, borderRadius:"6px", fontSize:"13px", fontWeight:600, textDecoration:"none" }}>Live Demo ↗</a>
+            <a href="https://product-os-one.vercel.app" target="_blank" rel="noopener noreferrer" style={{ padding:"10px 20px", background:C.gold, color:C.bg, borderRadius:"6px", fontSize:"13px", fontWeight:600, textDecoration:"none" }}>Live Demo ↗</a>
             <a href="https://github.com/rahulreddyutd/product-os" target="_blank" rel="noopener noreferrer" style={{ padding:"10px 20px", background:"transparent", color:C.text2, border:`1px solid ${C.borderHi}`, borderRadius:"6px", fontSize:"13px", textDecoration:"none" }}>GitHub →</a>
           </div>
         </div>
